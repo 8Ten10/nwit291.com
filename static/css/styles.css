@@ -1,0 +1,87 @@
+/* Ensure the body takes the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Set the body as a flex container */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper to contain header, content, and footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Allow the content area to expand and take available space */
+.container {
+    flex: 1;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #f1f1f1; /* Background color */
+    text-align: center;         /* Center the text */
+    padding: 10px;              /* Padding */
+    position: relative;         /* Ensure it stays relative to the flow */
+    width: 100%;                /* Full width */
+    margin-top: auto;           /* Push the footer to the bottom */
+}
+
+h2 {
+    color: #007bff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin: 10px 0;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}

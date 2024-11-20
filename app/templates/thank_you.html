@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Thank you for registering, {{ user }}!</h2>
+<p>Would you like to log in now?</p>
+<form method="POST" action="{{ url_for('thank_you') }}">
+    <button type="submit" name="choice" value="yes">Yes</button>
+    <button type="submit" name="choice" value="no">No</button>
+</form>
+{% endblock %}

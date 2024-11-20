@@ -5,4 +5,4 @@ class Config:
     MYSQL_HOST = 'localhost'
     MYSQL_USER = 'Admin'
     MYSQL_PASSWORD = 'password1234'
-    MYSQL_DB = 'nwit_db'
+    MYSQL_DB = 'nwit291'
